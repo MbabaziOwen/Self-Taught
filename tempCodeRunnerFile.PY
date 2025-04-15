@@ -1,19 +1,32 @@
 """
-Do you know what Mississippi is? Well, it's the name of one of the states and rivers in the United States. The Mississippi River is about 2,340 miles long, which makes it the second longest river in the United States (the longest being the Missouri River). It's so long that a single drop of water needs 90 days to travel its entire length!
+The Beatles were one of the most popular music groups of the 1960s, and the best-selling band in history. Some people consider them to be the most influential act of the rock era. Indeed, they were included in Time magazine's compilation of the 20th Century's 100 most influential people.
 
-The word Mississippi is also used for a slightly different purpose: to count mississippily.
+The band underwent many line-up changes, culminating in 1962 with the line-up of John Lennon, Paul McCartney, George Harrison, and Richard Starkey (better known as Ringo Starr).
 
-If you're not familiar with the phrase, we're here to explain to you what it means: it's used to count seconds.
+Write a program that reflects these changes and lets you practice with the concept of lists. Your task is to:
 
-The idea behind it is that adding the word Mississippi to a number when counting seconds aloud makes them sound closer to clock-time, and therefore "one Mississippi, two Mississippi, three Mississippi" will take approximately an actual three seconds of time! It's often used by children playing hide-and-seek to make sure the seeker does an honest count.
+    step 1: create an empty list named beatles;
+    step 2: use the append() method to add the following members of the band to the list: John Lennon, Paul McCartney, and George Harrison;
+    step 3: use the for loop and the append() method to prompt the user to add the following members of the band to the list: Stu Sutcliffe, and Pete Best;
+    step 4: use the del instruction to remove Stu Sutcliffe and Pete Best from the list;
+    step 5: use the insert() method to add Ringo Starr to the beginning of the list.
 
-Your task is very simple here: write a program that uses a for loop to "count mississippily" to five. Having counted to five, the program should print to the screen the final message "Ready or not, here I come!"
-
-Use the skeleton we've provided in the editor.
+By the way, are you a Beatles fan? (The Beatles is one of Greg's favorite bands. But wait...who's Greg...?)
 """
+#start
+#create empty list
+beatles = []
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+#for loop for the user to add members
+for i in range(2):
+    beatles.append(input("enter the other two members"))
 
-#Start
-mississippi = 1
-for i in range(5):
-    print("",mississippi,"mississippi")
-    mississippi +=1
+#deleting members
+del beatles[3]
+#del beatles[4]
+
+#insering member at start of list
+beatles.insert(0,"Ringo Starr")
+print(beatles)
