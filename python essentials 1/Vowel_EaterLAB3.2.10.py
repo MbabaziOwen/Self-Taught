@@ -19,7 +19,7 @@ Your program must:
 
 #Start
 #user input
-user_input = input("enter a word")
+user_input = input("enter a word: ")
 #convert it to capital letters
 user_word = user_input.upper()
 
